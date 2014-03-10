@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+	ServerName eno.gestinet.cat
+	DocumentRoot /home/gestinet/www/enocurs
+
+	SetEnv APPLICATION_ENV "development"
+
+	<Directory /home/gestinet/www/enocurs>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>
+

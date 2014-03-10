@@ -1,0 +1,5 @@
+<VirtualHost *:80>
+	ServerName pricelue.loc
+	ServerAlias www.pricelue.loc
+	DocumentRoot /home/gestinet/www/pricelue/public
+</VirtualHost>

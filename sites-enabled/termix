@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+	ServerName termix.fr
+	DocumentRoot /home/gestinet/www/termix_fr
+
+	SetEnv APPLICATION_ENV "development"
+
+	<Directory /home/gestinet/www/termix_fr>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>

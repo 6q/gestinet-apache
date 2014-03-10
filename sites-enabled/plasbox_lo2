@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+	ServerName lo2.plasbox.com
+	DocumentRoot /home/gestinet/www/plasbox_lo2
+
+	SetEnv APPLICATION_ENV "development"
+
+	<Directory /home/gestinet/www/plasbox_lo2>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>

@@ -1,0 +1,17 @@
+<VirtualHost *:80>
+	ServerName loc.apartamentossata.com
+	ServerAlias www.appartementssatabarcelone.fr
+	ServerAlias www.appartamentisatabarcellona.it
+	ServerAlias www.apartmentssatabarcelona.co.uk
+	
+	DocumentRoot /home/gestinet/www/apartamentossata.com
+
+	SetEnv APPLICATION_ENV "development"
+
+	<Directory /home/gestinet/www/apartamentossata.com>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>

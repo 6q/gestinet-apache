@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+	ServerName loc.plasbox.com
+	DocumentRoot /home/gestinet/www/plasbox_wordpress
+
+	SetEnv APPLICATION_ENV "development"
+
+	<Directory /home/gestinet/www/plasbox_wordpress>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>

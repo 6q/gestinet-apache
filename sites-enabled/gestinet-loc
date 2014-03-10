@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+	ServerName loc.gestinet.com
+	DocumentRoot /home/gestinet/www/gestinet_new
+
+	SetEnv APPLICATION_ENV "development"
+
+	<Directory /home/gestinet/www/gestinet_new>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>

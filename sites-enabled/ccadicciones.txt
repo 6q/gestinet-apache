@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+	ServerName www.ccadicciones.es
+	DocumentRoot /home/gestinet/www/www.ccadicciones.es
+
+	SetEnv APPLICATION_ENV "development"
+
+	<Directory /home/gestinet/www/www.ccadicciones.es>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>

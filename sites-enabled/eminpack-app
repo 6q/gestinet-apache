@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+	ServerName loc.eminpack.es
+	DocumentRoot /home/gestinet/www/eminpack
+
+	SetEnv APPLICATION_ENV "development"
+
+	<Directory /home/gestinet/www/eminpack>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>
